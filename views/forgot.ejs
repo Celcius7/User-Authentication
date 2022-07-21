@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Forgot Password</h1>
+  <p>Don't worry we are here for you.</p>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/forgot" method="POST">
+            <div class="form-group">
+              <label for="email">Enter your registered Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+
+            <button type="submit" class="btn btn-dark">Send</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
